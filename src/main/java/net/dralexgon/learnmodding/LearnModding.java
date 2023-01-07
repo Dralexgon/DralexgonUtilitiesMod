@@ -1,5 +1,6 @@
 package net.dralexgon.learnmodding;
 
+import net.dralexgon.learnmodding.block.ModBlocks;
 import net.dralexgon.learnmodding.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class LearnModding implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

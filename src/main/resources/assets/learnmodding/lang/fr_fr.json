@@ -1,4 +1,8 @@
 {
-  "item.learnmodding.raw_dragonite": "Dragonite brut",
-  "item.learnmodding.dragonite": "Dragonite"
+  "item.learnmodding.raw_dragonite": "Dragonite Brut",
+  "item.learnmodding.dragonite": "Dragonite",
+
+  "block.learnmodding.dragonite_block": "Bloc de Dragonite",
+
+  "itemGroup.learnmodding.dragonite": "Trucs en Dragonite"
 }

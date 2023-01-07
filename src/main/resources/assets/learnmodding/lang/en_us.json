@@ -1,4 +1,8 @@
 {
   "item.learnmodding.raw_dragonite": "Raw Dragonite",
-  "item.learnmodding.dragonite": "Dragonite"
+  "item.learnmodding.dragonite": "Dragonite",
+
+  "block.learnmodding.dragonite_block": "Block of Dragonite",
+
+  "itemGroup.learnmodding.dragonite": "Things in Dragonite"
 }
