@@ -1,6 +1,7 @@
 package net.dralexgon.learnmodding.event;
 
 import net.dralexgon.learnmodding.LearnModdingClient;
+import net.dralexgon.learnmodding.ENCHANTED_BOOK_FINDER_STATE;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;
@@ -12,7 +13,6 @@ public class KeyInputHandler {
 
     public static final String CATEGORY = "key.category.learnmodding.cheats";
     public static final String ENCHANTED_BOOKS_FINDER = "key.learnmodding.enchanted_books_finder";
-
     public static KeyBinding enchantedBooksFinderKey;
 
     public static void registerKeyInputs() {
