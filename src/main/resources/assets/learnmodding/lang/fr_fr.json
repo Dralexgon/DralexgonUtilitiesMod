@@ -4,5 +4,8 @@
 
   "block.learnmodding.dragonite_block": "Bloc de Dragonite",
 
-  "itemGroup.learnmodding.dragonite": "Trucs en Dragonite"
+  "itemGroup.learnmodding.dragonite": "Trucs en Dragonite",
+
+  "key.category.learnmodding.cheats": "Triche",
+  "key.learnmodding.enchanted_books_finder": "Trouveur de livres enchantés"
 }

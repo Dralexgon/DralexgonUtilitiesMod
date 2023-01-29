@@ -4,5 +4,8 @@
 
   "block.learnmodding.dragonite_block": "Block of Dragonite",
 
-  "itemGroup.learnmodding.dragonite": "Things in Dragonite"
+  "itemGroup.learnmodding.dragonite": "Things in Dragonite",
+
+  "key.category.learnmodding.cheats": "Learn Modding Cheats Keybindings",
+  "key.learnmodding.enchanted_books_finder": "Enchanted Books Finder Key"
 }
