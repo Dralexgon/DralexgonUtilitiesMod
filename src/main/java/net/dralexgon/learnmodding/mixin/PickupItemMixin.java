@@ -1,7 +1,7 @@
 package net.dralexgon.learnmodding.mixin;
 
 import net.dralexgon.learnmodding.ENCHANTED_BOOK_FINDER_STATE;
-import net.dralexgon.learnmodding.LearnModdingClient;
+import net.dralexgon.learnmodding.EnchantedBookFinderManager;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,10 +21,12 @@ public abstract class PickupItemMixin {
 
     @Inject(at = @At("HEAD"), method = "onPlayerCollision")
     private void onPlayerCollisionMixin(PlayerEntity player, CallbackInfo ci) {
+        /*
         MinecraftClient mc = MinecraftClient.getInstance();
-        if (LearnModdingClient.STATE == ENCHANTED_BOOK_FINDER_STATE.MINING && this.getStack().getItem().equals(Items.LECTERN)) {
+        if (EnchantedBookFinderManager.STATE == ENCHANTED_BOOK_FINDER_STATE.MINING && this.getStack().getItem().equals(Items.LECTERN)) {
             mc.player.sendMessage(Text.of("§2 Lectern pickup !"), false);
+            EnchantedBookFinderManager.STATE = ENCHANTED_BOOK_FINDER_STATE.WAITING_BARITONE_FINISIH;
         }
-        mc.player.sendMessage(Text.of("§2 item pickup !"), false);
+        mc.player.sendMessage(Text.of("§2 item pickup !"), false);*/
     }
 }
