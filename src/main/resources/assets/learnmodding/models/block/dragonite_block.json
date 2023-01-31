@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-      "all": "learnmodding:block/dragonite_block"
-  }
-}

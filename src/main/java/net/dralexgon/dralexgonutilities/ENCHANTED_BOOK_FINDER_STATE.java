@@ -1,10 +1,9 @@
-package net.dralexgon.learnmodding;
+package net.dralexgon.dralexgonutilities;
 
 public enum ENCHANTED_BOOK_FINDER_STATE {
     READY,
     MINING,
-    WAITING_BARITONE_GOTO,
     SEARCHING_VILLAGER,
     WAITING_FOR_TRADE_OFFER,
-    FOUND
+    FOUND_ENCHANTED_BOOK
 }

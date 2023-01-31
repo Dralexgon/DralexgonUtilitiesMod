@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "learnmodding",
+  "id": "dralexgonutilities",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is my first mod! It's for learning how to make mods and do testing.",
+  "name": "Dralexgon Utilities Mod",
+  "description": "This will do boring stuff for you !",
   "authors": [
     "Dralexgon"
   ],
@@ -14,19 +14,19 @@
   },
 
   "license": "MIT License",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/dralexgonutilities/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.dralexgon.learnmodding.LearnModding"
+      "net.dralexgon.dralexgonutilities.DralexgonUtilities"
     ],
     "client": [
-      "net.dralexgon.learnmodding.LearnModdingClient"
+      "net.dralexgon.dralexgonutilities.DralexgonUtilitiesClient"
     ]
   },
   "mixins": [
-    "learnmodding.mixins.json"
+    "dralexgonutilities.mixins.json"
   ],
 
   "depends": {

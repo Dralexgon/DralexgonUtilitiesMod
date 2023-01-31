@@ -1,11 +1,11 @@
-package net.dralexgon.learnmodding;
+package net.dralexgon.dralexgonutilities;
 
-import net.dralexgon.learnmodding.event.InteractHandler;
-import net.dralexgon.learnmodding.event.KeyInputHandler;
-import net.dralexgon.learnmodding.event.TickEventHandler;
+import net.dralexgon.dralexgonutilities.event.InteractHandler;
+import net.dralexgon.dralexgonutilities.event.KeyInputHandler;
+import net.dralexgon.dralexgonutilities.event.TickEventHandler;
 import net.fabricmc.api.ClientModInitializer;
 
-public class LearnModdingClient implements ClientModInitializer {
+public class DralexgonUtilitiesClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {

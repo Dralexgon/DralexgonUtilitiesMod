@@ -1,6 +1,6 @@
-package net.dralexgon.learnmodding.mixin;
+package net.dralexgon.dralexgonutilities.mixin;
 
-import net.dralexgon.learnmodding.LearnModding;
+import net.dralexgon.dralexgonutilities.DralexgonUtilities;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ExampleMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		LearnModding.LOGGER.info("This line is printed by an example mod mixin!");
+		DralexgonUtilities.LOGGER.info("This line is printed by an example mod mixin!");
 	}
 }

@@ -1,13 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.dralexgon.learnmodding.mixin",
+  "package": "net.dralexgon.dralexgonutilities.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],
   "client": [
     "ExampleMixin",
-    "PickupItemMixin",
     "ClientConnectionMixin"
   ],
   "injectors": {
