@@ -1,6 +1,6 @@
 package net.dralexgon.dralexgonutilities.event;
 
-import net.dralexgon.dralexgonutilities.EnchantedBookFinderManager;
+import net.dralexgon.dralexgonutilities.enchantedbookfinder.EnchantedBookFinderManager;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;

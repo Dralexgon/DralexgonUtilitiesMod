@@ -1,4 +1,4 @@
-package net.dralexgon.dralexgonutilities;
+package net.dralexgon.dralexgonutilities.enchantedbookfinder;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;
@@ -21,7 +21,7 @@ public class EnchantedBookFinderManager {
 
     public static boolean ENABLED;
     public static int DEBUG;
-    public static ENCHANTED_BOOK_FINDER_STATE STATE;
+    public static net.dralexgon.dralexgonutilities.enchantedbookfinder.STATE STATE;
     public static long waitingTimestamp;
     public static int nbLecterns;
     public static BlockPos lecternPos;
@@ -44,7 +44,7 @@ public class EnchantedBookFinderManager {
     }
 
     public static void reset() {
-        STATE = ENCHANTED_BOOK_FINDER_STATE.READY;
+        STATE = net.dralexgon.dralexgonutilities.enchantedbookfinder.STATE.READY;
         waitingTimestamp = 0;
         nbLecterns = 0;
         lecternPos = null;
@@ -67,7 +67,7 @@ public class EnchantedBookFinderManager {
         client.getNetworkHandler().sendPacket(packetStartDestroyBlock);
         Packet packetStopDestroyBlock = new PlayerActionC2SPacket(PlayerActionC2SPacket.Action.STOP_DESTROY_BLOCK, EnchantedBookFinderManager.lecternPos, Direction.UP);
         client.getNetworkHandler().sendPacket(packetStopDestroyBlock);
-        EnchantedBookFinderManager.STATE = ENCHANTED_BOOK_FINDER_STATE.MINING;
+        EnchantedBookFinderManager.STATE = net.dralexgon.dralexgonutilities.enchantedbookfinder.STATE.MINING;
     }
 
     public static void placeLectern() {//TODO use packet instead
@@ -75,7 +75,7 @@ public class EnchantedBookFinderManager {
         BlockHitResult hitResult = new BlockHitResult(new Vec3d(lp.getX(), lp.getY(), lp.getZ()), Direction.UP, lp, false);
         client.interactionManager.interactBlock(
                 client.player, Hand.OFF_HAND, hitResult);
-        EnchantedBookFinderManager.STATE = ENCHANTED_BOOK_FINDER_STATE.SEARCHING_VILLAGER;
+        EnchantedBookFinderManager.STATE = net.dralexgon.dralexgonutilities.enchantedbookfinder.STATE.SEARCHING_VILLAGER;
     }
 
     public static void searchingVillager() {
@@ -98,7 +98,7 @@ public class EnchantedBookFinderManager {
         }
         if (closestVillager != null) {
             client.interactionManager.interactEntity(client.player, closestVillager, client.player.getActiveHand());
-            EnchantedBookFinderManager.STATE = ENCHANTED_BOOK_FINDER_STATE.WAITING_FOR_TRADE_OFFER;
+            EnchantedBookFinderManager.STATE = net.dralexgon.dralexgonutilities.enchantedbookfinder.STATE.WAITING_FOR_TRADE_OFFER;
         }
     }
 }

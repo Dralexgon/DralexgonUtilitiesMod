@@ -1,6 +1,6 @@
-package net.dralexgon.dralexgonutilities;
+package net.dralexgon.dralexgonutilities.enchantedbookfinder;
 
-public enum ENCHANTED_BOOK_FINDER_STATE {
+public enum STATE {
     READY,
     MINING,
     SEARCHING_VILLAGER,
