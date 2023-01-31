@@ -70,7 +70,7 @@ public class EnchantedBookFinderManager {
         EnchantedBookFinderManager.STATE = ENCHANTED_BOOK_FINDER_STATE.MINING;
     }
 
-    public static void placeLectern() {//use packet instead
+    public static void placeLectern() {//TODO use packet instead
         BlockPos lp = EnchantedBookFinderManager.lecternPos;
         BlockHitResult hitResult = new BlockHitResult(new Vec3d(lp.getX(), lp.getY(), lp.getZ()), Direction.UP, lp, false);
         client.interactionManager.interactBlock(
